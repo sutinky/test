@@ -1,5 +1,5 @@
 resource "null_resource" "resource3" {
-  /*count = 5
+  count = 10
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
@@ -9,5 +9,5 @@ resource "null_resource" "resource3" {
  
   triggers = {
     test = format("example+%s", timestamp())
-  }*/
+  }
 }
