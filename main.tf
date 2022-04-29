@@ -9,4 +9,5 @@ resource "null_resource14234" "resource3" {
  
   triggers = {
     test = format("example+%s", timestamp())
+  }
 
