@@ -1,5 +1,5 @@
 resource "null_resource" "resourceHello" {
-  count = 10000
+  count = 30000
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
