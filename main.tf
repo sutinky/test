@@ -3,4 +3,4 @@ resource "null_resource" "resourceHello" {
   provisioner "local-exec" {
     command = "echo Hello World!"
   }
-}
+
