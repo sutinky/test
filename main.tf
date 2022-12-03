@@ -1,5 +1,5 @@
 resource "null_resource" "resourceHello" {
-  count = 6250
+  count = 1
   #provisioner "local-exeс" {
     #command = "echo Hello World!"
   #}
