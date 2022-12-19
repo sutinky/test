@@ -5,6 +5,10 @@ resource "null_resource" "resourceHello" {
   #}
 }
 
+variable "false" {
+  default = true
+  sensitive = true
+}
 variable "boolean" {
   default = true
   sensitive = true
