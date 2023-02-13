@@ -23,3 +23,4 @@ variable "float" {
   default = 15.55
   sensitive = true
 }
+
