@@ -19,6 +19,7 @@ variable "number" {
   sensitive = true
 }
 
+
 variable "float" {
   default = 15.55
   sensitive = true
