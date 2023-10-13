@@ -4,3 +4,7 @@ resource "null_resource" "resourceHello" {
     #command = "echo Hello World!"
   #}
 }
+
+output "instance_ip_addr" {
+  value = 'lorem'
+}
