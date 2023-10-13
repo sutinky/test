@@ -6,5 +6,5 @@ resource "null_resource" "resourceHello" {
 }
 
 output "instance_ip_addr" {
-  value = 'lorem'
+  value = "lorem"
 }
