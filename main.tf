@@ -7,7 +7,7 @@ resource "null_resource" "resourceHello" {
 
 variable "thisstr" {
   type = string
-  default = 'test'
+  default = "test"
 }
 
 variable "magic_animals" {
