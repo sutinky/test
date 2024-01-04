@@ -5,7 +5,7 @@ resource "null_resource" "resourceHello" {
   #}
 }
 
-variable "magic_animals" {
+variable "thisstr" {
   type = string
   default = 'test'
 }
