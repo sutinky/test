@@ -6,6 +6,11 @@ resource "null_resource" "resourceHello" {
 }
 
 variable "magic_animals" {
+  type = string
+  default = 'test'
+}
+
+variable "magic_animals" {
   type = list(object({
     name       = string
     power      = string
