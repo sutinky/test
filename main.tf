@@ -5,8 +5,14 @@ resource "null_resource" "resourceHello" {
   #}
 }
 
+variable "bool" {
+  default = true
+}
 
-variable "thisstr" {
+variable "boolstr" {
+  default = 'true'
+}
+variable "str" {
   default = "test"
 }
 
