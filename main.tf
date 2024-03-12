@@ -10,7 +10,7 @@ variable "bool" {
 }
 
 variable "boolstr" {
-  #default = "true"
+  default = "true"
 }
 variable "str" {
   default = "test"
