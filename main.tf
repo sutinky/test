@@ -6,7 +6,8 @@ resource "null_resource" "resourceHello" {
 }
 
 variable "bool" {
-  default = true
+  type = bool
+  default = false
 }
 
 variable "boolstr" {
