@@ -80,7 +80,7 @@ variable "magic_animal_object" {
 
 #In this example, the magic_animal_tuple variable is defined as a tuple that contains three magical animal attributes: name, element, and power. The resulting tuple will be ["Centaur", "Earth", "Archery"].
 variable "magic_animal_tuple" {
-  default = ["Usual Centaur", "Big Earth", "Non-Archery-Dry-check-on-222staging"]
+  #default = ["Usual Centaur", "Big Earth", "Non-Archery-Dry-check-on-222staging"]
 }
 
 output "instance_ip_addr" {
