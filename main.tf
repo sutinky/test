@@ -84,5 +84,5 @@ variable "magic_animal_tuple" {
 }
 
 output "instance_ip_addr" {
-  value = "lorem"
+  value = var.magic_animal_tuple
 }
