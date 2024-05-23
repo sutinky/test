@@ -1,3 +1,11 @@
+terraform {
+    required_providers {
+        scalr = {
+            source = "scalr/scalr"
+            version= "1.0.4"
+        }
+    }
+}
 resource "null_resource" "resourceHello" {
   count = 1
   #provisioner "local-exeс" {
