@@ -8,16 +8,13 @@ terraform {
 }
 resource "null_resource" "resourceHello" {
   count = 1
-  #provisioner "local-exeс" {
-    #command = "echo Hello World!"
-  #}
 }
 resource "scalr_variable" "example1" {
   key          = "my_key_name"
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0oc597se9f7nqpfr"
+  workspace_id = "ws-v0ochom1oljir0mhe"
 }
 /*
 variable "bool" {
