@@ -10,7 +10,7 @@ resource "null_resource" "resourceHello" {
   count = 1
 }
 resource "scalr_variable" "example1" {
-  key          = "my_key_name"
+  key          = "my_key_name777"
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
