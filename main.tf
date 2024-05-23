@@ -4,7 +4,14 @@ resource "null_resource" "resourceHello" {
     #command = "echo Hello World!"
   #}
 }
-
+resource "scalr_variable" "example1" {
+  key          = "my_key_name"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0oc597se9f7nqpfr"
+}
+/*
 variable "bool" {
   type = bool
   default = false
@@ -86,3 +93,4 @@ variable "magic_animal_tuple" {
 output "instance_ip_addr" {
   value = var.magic_animal_tuple
 }
+*/
