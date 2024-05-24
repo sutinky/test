@@ -16,6 +16,11 @@ resource "scalr_variable" "example1" {
   description  = "variable description"
   workspace_id = "ws-v0ochom1oljir0mhe"
 }
+
+output "instance_ip_addr" {
+  value = "lorem"
+}
+
 /*
 variable "bool" {
   type = bool
