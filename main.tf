@@ -19,10 +19,11 @@ resource "scalr_variable" "example1" {
 
 resource "scalr_variable" "magic_animals_list" {
   key          = "magic_animals_list"
-  value        = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
+  value        = jsonencode(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"])
   category     = "terraform"
   description  = "variable description"
   workspace_id = "ws-v0ochom1oljir0mhe"
+  hcl          = true
 }
 
 
