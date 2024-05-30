@@ -170,7 +170,7 @@ variable "object_in_object" {
     }
   }
 }
-
+/*
 variable "array_in_object_in_array" {
   default = [
     {
@@ -179,7 +179,7 @@ variable "array_in_object_in_array" {
   ]
 }
 
-/*
+
 output "instance_ip_addr" {
   value = "lorem"
 }*/
