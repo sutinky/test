@@ -91,6 +91,10 @@ variable "magic_animal_tuple" {
   default = ["Usual Centaur", "Big Earth", "Non-Archery-Dry-check-on-222staging"]
 }
 
+variable "list_untyped" {
+  default = ["a", 15, true]
+}
+
 variable "boolean" {
   type = bool
   default = false
@@ -109,6 +113,10 @@ variable "undefined" {
 
 variable "null" {
   default = "null"
+}
+
+variable "nullable" {
+  default = null
 }
 
 variable "Infinity" {
