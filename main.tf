@@ -16,12 +16,11 @@ resource "scalr_variable" "example1" {
   description  = "variable description"
   workspace_id = "ws-v0ochom1oljir0mhe"
 }
-
+/*
 output "instance_ip_addr" {
   value = "lorem"
-}
+}*/
 
-/*
 variable "bool" {
   type = bool
   default = false
@@ -100,7 +99,53 @@ variable "magic_animal_tuple" {
   default = ["Usual Centaur", "Big Earth", "Non-Archery-Dry-check-on-222staging"]
 }
 
-output "instance_ip_addr" {
-  value = var.magic_animal_tuple
+variable "undefined" {
+  default = "undefined"
 }
-*/
+
+variable "null" {
+  default = "null"
+}
+
+variable "Infinity" {
+  default = "Infinity"
+}
+
+variable "object_in_array" {
+  default = [
+    {
+      name = "unicorn"
+    }
+  ]
+}
+
+variable "array_in_object" {
+  default = {
+      name = "unicorn2"
+      power = ["unicorn", "dragon"]
+    }
+}
+
+variable "array_in_array" {
+  default = [
+    ["unicorn", "dragon"],
+  ]
+}
+
+variable "object_in_object" {
+  default = {
+    name = "unicorn3"
+    power = {
+        name = "magic"
+    }
+  }
+}
+
+variable "array_in_object_in_array" {
+  default = [
+    {
+      name = ["unicorn", "dragon"]
+    }
+  ]
+}
+
