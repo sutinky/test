@@ -26,6 +26,14 @@ resource "scalr_variable" "magic_animals_list" {
   hcl          = true
 }
 
+resource "scalr_variable" "array_in_object_in_array" {
+  key          = "array_in_object_in_array"
+  value        = jsonencode([{name = ["unicorn", "dragon"]}])
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ochom1oljir0mhe"
+  hcl          = true
+}
 
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
 /*variable "magic_animals_list" {
