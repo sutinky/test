@@ -14,7 +14,7 @@ resource "scalr_variable" "example1" {
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0ochom1oljir0mhe"
+  workspace_id = "ws-v0od3j4dts3fmfvik"
 }
 
 resource "scalr_variable" "magic_animals_list" {
@@ -22,7 +22,7 @@ resource "scalr_variable" "magic_animals_list" {
   value        = jsonencode(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"])
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0ochom1oljir0mhe"
+  workspace_id = "ws-v0od3j4dts3fmfvik"
   hcl          = true
 }
 
@@ -31,7 +31,7 @@ resource "scalr_variable" "array_in_object_in_array" {
   value        = jsonencode([{name = ["unicorn", "dragon"]}])
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0ochom1oljir0mhe"
+  workspace_id = "ws-v0od3j4dts3fmfvik"
   hcl          = true
 }
 
