@@ -1,3 +1,7 @@
+resource "null_resource" "resourceHello" {
+  count = 1
+}
+/*
 terraform {
     required_providers {
         scalr = {
@@ -5,9 +9,6 @@ terraform {
             version= "1.0.4"
         }
     }
-}
-resource "null_resource" "resourceHello" {
-  count = 1
 }
 resource "scalr_variable" "example1" {
   key          = "my_key_name777"
@@ -34,7 +35,7 @@ resource "scalr_variable" "array_in_object_in_array" {
   workspace_id = "ws-v0od3j4dts3fmfvik"
   hcl          = true
 }
-
+*/
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
 /*variable "magic_animals_list" {
   type    = list(string)
