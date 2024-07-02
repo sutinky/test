@@ -1,7 +1,7 @@
 resource "null_resource" "resourceHello" {
-  count = 8888
+  count = 8
 }
-/*
+
 terraform {
     required_providers {
         scalr = {
@@ -15,9 +15,9 @@ resource "scalr_variable" "example1" {
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0od3j4dts3fmfvik"
+  workspace_id = "ws-v0oe4cjptgdtf0ed7"
 }
-
+/*
 resource "scalr_variable" "magic_animals_list" {
   key          = "magic_animals_list"
   value        = jsonencode(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"])
