@@ -15,7 +15,7 @@ resource "scalr_variable" "example1" {
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0oe4cjptgdtf0ed7"
+  workspace_id = "ws-v0oe4caupa6d60f34"
 }
 /*
 resource "scalr_variable" "magic_animals_list" {
