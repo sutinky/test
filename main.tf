@@ -184,3 +184,16 @@ variable "array_in_object_in_array" {
 output "instance_ip_addr" {
   value = "lorem"
 }*/
+variable "prefix" {
+  type        = string
+  description = "What fruit to pick?"
+  default     = "appl"
+
+ validation {
+    condition = contains(
+      ["lemon", "cherry", "apple", "banana", "mango"],
+      var.prefix
+    )
+    error_message = "Err: prefix is not valid."
+  }
+}
