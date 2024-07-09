@@ -171,6 +171,11 @@ variable "object_in_object" {
     }
   }
 }
+
+variable "truth" {
+  default = "true"
+  sensitive = true
+}
 /*
 variable "array_in_object_in_array" {
   default = [
