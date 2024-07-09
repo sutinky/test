@@ -145,7 +145,8 @@ variable "nullable" {
   default = null
 }
 variable "number" {
-  //type = number
+  type = number
+  sensitive = true
   default = 123
 }
 
