@@ -145,7 +145,7 @@ variable "nullable" {
   default = null
 }
 variable "number" {
-  type = number
+  //type = number
   default = 123
 }
 
