@@ -146,6 +146,7 @@ variable "nullable" {
 }
 variable "number" {
   type = number
+  default = 123
 }
 
 variable "Infinity" {
