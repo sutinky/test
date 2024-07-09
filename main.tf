@@ -144,6 +144,9 @@ variable "null" {
 variable "nullable" {
   default = null
 }
+variable "number" {
+  type = number
+}
 
 variable "Infinity" {
   default = "Infinity"
