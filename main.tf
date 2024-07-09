@@ -49,7 +49,7 @@ variable "magic_animals" {
     element    = string
     description = string
   }))
-  default = [
+  /*default = [
     {
       name        = "unicorn"
       power       = "sparkle"
@@ -74,7 +74,7 @@ variable "magic_animals" {
       element     = "air"
       description = "A majestic creature with the body of a lion and the head of an eagle."
     }
-  ]
+  ]*/
 }
 #In this example, the magic_animals_set variable is defined as a set of strings representing magic animals. The resulting set will be ["unicorn", "dragon", "phoenix", "griffin"]
 variable "magic_animals_set" {
