@@ -81,7 +81,19 @@ resource "null_resource" "map_object" {
     command = "echo ${var.magic_animals[0].name}"
   }
 }
-
+variable "magic_animals2" {
+  type = list(object({
+    name       = string
+    power      = string
+    element    = string
+    description = string
+  }))
+}
+resource "null_resource" "map_object2" {
+  provisioner "local-exec" {
+    command = "echo ${var.magic_animals2[0].name}"
+  }
+}
 
 #In this example, the magic_animals_set variable is defined as a set of strings representing magic animals. The resulting set will be ["unicorn", "dragon", "phoenix", "griffin"]
 variable "magic_animals_set" {
