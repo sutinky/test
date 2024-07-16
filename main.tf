@@ -76,11 +76,7 @@ variable "magic_animals" {
     }
   ]*/
 }
-resource "null_resource" "map_object" {
-  provisioner "local-exec" {
-    command = "echo ${var.magic_animals[0].name}"
-  }
-}
+
 variable "magic_animals2" {
   type = list(object({
     name       = string
@@ -89,9 +85,21 @@ variable "magic_animals2" {
     description = string
   }))
 }
-resource "null_resource" "map_object2" {
+resource "null_resource" "boolean" {
   provisioner "local-exec" {
-    command = "echo ${var.magic_animals2[0].name}"
+    command = "echo ${var.boolean}"
+  }
+}
+
+resource "null_resource" "true" {
+  provisioner "local-exec" {
+    command = "echo ${var.true}"
+  }
+}
+
+resource "null_resource" "string" {
+  provisioner "local-exec" {
+    command = "echo ${var.string}"
   }
 }
 
