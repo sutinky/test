@@ -77,21 +77,21 @@ variable "magic_animals" {
   ]
 }
 
-resource "null_resource" "boolean" {
-  provisioner "local-exec" {
-    command = "echo ${var.boolean}"
-  }
-}
-
-resource "null_resource" "true" {
-  provisioner "local-exec" {
-    command = "echo ${var.true}"
-  }
-}
-
 resource "null_resource" "string" {
   provisioner "local-exec" {
     command = "echo ${var.string}"
+  }
+}
+
+resource "null_resource" "string_eot" {
+  provisioner "local-exec" {
+    command = "echo ${var.string_eot}"
+  }
+}
+
+resource "null_resource" "string_eot2" {
+  provisioner "local-exec" {
+    command = "echo ${var.string_eot2}"
   }
 }
 
