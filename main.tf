@@ -136,7 +136,14 @@ variable "list_untyped" {
 variable "boolean" {
   type = bool
   default = false
-  description  = <<EOT
+}
+
+variable "true" {
+  default = "true"
+}
+variable "string" {
+  default = "test"
+  description  = <<-EOT
                         request.method.lower() == 'get'
                         && request.path.matches('^.+\\.(?:css
 |html|ico|js|json|png|svg|ttf|woff|woff2|yaml|yml)$')
@@ -145,18 +152,19 @@ own/')
                     EOT
 }
 
-variable "true" {
-  default = "true"
-  description  = <<-EOT
-                        request.method.lower() == 'get'
-                        && request.path.matches('^/api/tfe/v1
-/blobs/.+')
+variable "string_eot" {
+  default = <<-EOT
+                        {request.method.lower() == 'get'
+                        && request.path.matches('^.+\\.(?:css
+|html|ico|js|json|png|svg|ttf|woff|woff2|yaml|yml)$')
+                        || request.path.startsWith('/.well-kn
+own/')
                     EOT
 }
-variable "string" {
-  default = "test"
-  description  = <<-EOT
-                        request.method.lower() == 'get'
+
+variable "string_eot2" {
+  default = <<EOT
+                        ]request.method.lower() == 'get'
                         && request.path.matches('^.+\\.(?:css
 |html|ico|js|json|png|svg|ttf|woff|woff2|yaml|yml)$')
                         || request.path.startsWith('/.well-kn
