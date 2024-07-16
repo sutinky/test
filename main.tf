@@ -147,6 +147,11 @@ own/')
 
 variable "true" {
   default = "true"
+  description  = <<-EOT
+                        request.method.lower() == 'get'
+                        && request.path.matches('^/api/tfe/v1
+/blobs/.+')
+                    EOT
 }
 variable "string" {
   default = "test"
