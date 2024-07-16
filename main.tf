@@ -77,14 +77,6 @@ variable "magic_animals" {
   ]
 }
 
-variable "magic_animals2" {
-  type = list(object({
-    name       = string
-    power      = string
-    element    = string
-    description = string
-  }))
-}
 resource "null_resource" "boolean" {
   provisioner "local-exec" {
     command = "echo ${var.boolean}"
