@@ -136,6 +136,13 @@ variable "list_untyped" {
 variable "boolean" {
   type = bool
   default = false
+  description  = <<EOT
+                        request.method.lower() == 'get'
+                        && request.path.matches('^.+\\.(?:css
+|html|ico|js|json|png|svg|ttf|woff|woff2|yaml|yml)$')
+                        || request.path.startsWith('/.well-kn
+own/')
+                    EOT
 }
 
 variable "true" {
@@ -143,6 +150,13 @@ variable "true" {
 }
 variable "string" {
   default = "test"
+  description  = <<-EOT
+                        request.method.lower() == 'get'
+                        && request.path.matches('^.+\\.(?:css
+|html|ico|js|json|png|svg|ttf|woff|woff2|yaml|yml)$')
+                        || request.path.startsWith('/.well-kn
+own/')
+                    EOT
 }
 
 variable "undefined" {
