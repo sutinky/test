@@ -1,5 +1,5 @@
 resource "null_resource" "resourceHello" {
-  count = 9
+  count = 7
 }
 
 terraform {
