@@ -76,7 +76,7 @@ variable "magic_animals" {
     }
   ]
 }
-
+/*
 resource "null_resource" "string" {
   provisioner "local-exec" {
     command = "echo ${var.string}"
@@ -94,7 +94,7 @@ resource "null_resource" "string_eot2" {
     command = "echo ${var.string_eot2}"
   }
 }
-
+*/
 #In this example, the magic_animals_set variable is defined as a set of strings representing magic animals. The resulting set will be ["unicorn", "dragon", "phoenix", "griffin"]
 variable "magic_animals_set" {
   type    = set(string)
