@@ -1,7 +1,3 @@
-/*resource "null_resource" "resourceHello" {
-  count = 7
-}*/
-
 terraform {
     required_providers {
         scalr = {
@@ -17,6 +13,19 @@ resource "scalr_variable" "example1" {
   description  = "variable description"
   workspace_id = "ws-v0oeo24s5ejbu8asf"
 }
+
+
+
+
+
+
+
+
+
+/*resource "null_resource" "resourceHello" {
+  count = 7
+}*/
+
 /*
 resource "scalr_variable" "magic_animals_list" {
   key          = "magic_animals_list"
