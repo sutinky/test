@@ -7,7 +7,7 @@ terraform {
     }
 }
 resource "scalr_variable" "example1" {
-  key          = "name1"
+  key          = "name3"
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
