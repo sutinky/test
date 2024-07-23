@@ -1,6 +1,6 @@
-resource "null_resource" "resourceHello" {
+/*resource "null_resource" "resourceHello" {
   count = 7
-}
+}*/
 
 terraform {
     required_providers {
@@ -11,7 +11,7 @@ terraform {
     }
 }
 resource "scalr_variable" "example1" {
-  key          = "my_key_name777"
+  key          = "name1"
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
@@ -35,12 +35,12 @@ resource "scalr_variable" "array_in_object_in_array" {
   workspace_id = "ws-v0od3j4dts3fmfvik"
   hcl          = true
 }
-*/
+
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
 /*variable "magic_animals_list" {
   type    = list(string)
   default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
-}*/
+}
 #In this example, the magic_animals variable is a list of objects. Each object represents a magic animal and contains attributes such as name, power, element, and description. The default value provides a list of four magic animals with their respective attributes.
 variable "magic_animals" {
   type = list(object({
@@ -76,7 +76,7 @@ variable "magic_animals" {
     }
   ]
 }
-/*
+
 resource "null_resource" "string" {
   provisioner "local-exec" {
     command = "echo ${var.string}"
@@ -94,7 +94,7 @@ resource "null_resource" "string_eot2" {
     command = "echo ${var.string_eot2}"
   }
 }
-*/
+
 #In this example, the magic_animals_set variable is defined as a set of strings representing magic animals. The resulting set will be ["unicorn", "dragon", "phoenix", "griffin"]
 variable "magic_animals_set" {
   type    = set(string)
@@ -227,7 +227,7 @@ variable "truth" {
   default = "true"
   sensitive = true
 }
-/*
+
 variable "array_in_object_in_array" {
   default = [
     {
