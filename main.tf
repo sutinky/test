@@ -1,8 +1,8 @@
 variable "nullable" {
-
+  type    = map(string)
 }
 variable "number" {
-
+type    = map(string)
 }
 
 variable "Infinity" {
