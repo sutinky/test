@@ -8,6 +8,10 @@ type    = map(string)
 variable "Infinity" {
 
 }
+
+variable "Infinity2" {
+
+}
 variable "list_untyped" {
   default = ["a", 15, true]
 }
