@@ -1,3 +1,14 @@
+variable "nullable" {
+
+}
+variable "number" {
+
+}
+
+variable "Infinity" {
+
+}
+
 terraform {
   required_providers {
     local = {
