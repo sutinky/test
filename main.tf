@@ -8,6 +8,9 @@ variable "number" {
 variable "Infinity" {
 
 }
+variable "list_untyped" {
+  default = ["a", 15, true]
+}
 
 terraform {
   required_providers {
