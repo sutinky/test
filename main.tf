@@ -1,22 +1,3 @@
-variable "nullable" {
-  type    = map(string)
-}
-variable "number" {
-type    = map(string)
-}
-
-variable "Infinity" {
-  type = string
-
-}
-
-variable "Infinity2" {
-  type = string
-}
-variable "list_untyped" {
-  default = ["a", 15, true]
-}
-
 terraform {
   required_providers {
     local = {
