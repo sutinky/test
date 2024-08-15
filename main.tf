@@ -13,11 +13,11 @@ terraform {
 provider "local" {}
 resource "local_file" "test_file_5" {
   #count = 8
-  /*filename = "${path.module}/test_file_${count.index}_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
-  content  = "This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE|" */
+  filename = "${path.module}/test_file_${count.index}_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
+  content  = "This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE|" 
 
-  filename = "${path.module}/test_file__special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
-  content  = "This is test file number  with special characters TEST TEAM || motor-car |SEPARATE MODULE|"
+  #filename = "${path.module}/test_file__special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
+  #content  = "This is test file number  with special characters TEST TEAM || motor-car |SEPARATE MODULE|"
 }
 
 resource "local_file" "test_file" {
