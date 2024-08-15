@@ -1,3 +1,7 @@
+output "instance_ip_addr" {
+  value = "M || N"
+}
+/*
 terraform {
   required_providers {
     local = {
@@ -15,7 +19,7 @@ resource "local_file" "test_file_5" {
   filename = "${path.module}/test_file__special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
   content  = "This is test file number  with special characters TEST TEAM || motor-car |SEPARATE MODULE|"
 }
-/*
+
 resource "local_file" "test_file" {
   count = 1000
   filename = "${path.module}/test_file_${count.index}.txt"
