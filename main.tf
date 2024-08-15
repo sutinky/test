@@ -7,7 +7,12 @@ terraform {
 }
 
 provider "local" {}
-
+resource "local_file" "test_file_5" {
+  count = 8
+  filename = "${path.module}/test_file_${count.index}_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
+  content  = "This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE|"
+}
+/*
 resource "local_file" "test_file" {
   count = 1000
   filename = "${path.module}/test_file_${count.index}.txt"
@@ -71,12 +76,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
   EOT
 }
 
-resource "local_file" "test_file_5" {
-  count = 8
-  filename = "${path.module}/test_file_${count.index}_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
-  content  = "This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE|"
-}
-
 resource "local_file" "test_file_long_1000_chars2" {
   filename = "${path.module}/test_file_long.txt"
   content  = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
@@ -88,7 +87,7 @@ resource "local_file" "test_file_with_block" {
     Web:
           URL                   : https://alfiia-immortal.testenv.scalr.dev
   EOT
-}
+}*/
 /*
 resource "null_resource" "resourceHello" {
   count = 7
@@ -130,6 +129,7 @@ resource "scalr_variable" "array_in_object_in_array" {
   hcl          = true
 }
 */
+/*
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
 variable "magic_animals_list" {
   type    = list(string)
@@ -334,3 +334,4 @@ variable "array_in_object_in_array" {
 output "instance_ip_addr" {
   value = "lorem"
 }
+*/
