@@ -1,3 +1,21 @@
+terraform {
+  required_providers {
+    scalr = {
+      source = "scalr/scalr"
+      version = "> 1.0"
+    }
+  }
+}
+provider "scalr" {
+  hostname = "mainiacp.valt-tag.testenv.scalr.dev/"
+  token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY2Fscjp1c2VyIiwianRpIjoiYXQtdjBvZzFyM2Y2c2EyYmhkNmUifQ.us0_zL6pYsjnXaDsiMsvpuo3x6AEQbJscQyrul0-7wY"
+}
+resource "scalr_tag" "this" {
+  count = 50
+  name = "tag-${count.index}"
+  account_id = "acc-svrcncgh453bi8g"
+}
+
 output "instance_ip_addr" {
   value = " * Lorem ipsum"
 }
