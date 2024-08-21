@@ -1,26 +1,26 @@
 output "instance_ip_addr" {
-  value = " * Lorem ipsum"
+  value = " + Lorem ipsum"
 }
 output "instance_ip_addr2" {
-  value = "Lorem * ipsum"
+    value = "Lorem + ipsum"
 }
 output "instance_ip_addr3" {
-  value = "Lorem ipsum * "
+    value = "Lorem ipsum + "
 }
 output "instance_ip_addr4" {
-  value = " * Lorem * ipsum * "
+    value = " + Lorem + ipsum + "
 }
 output "instance_ip_addr5" {
-  value = " *Loremipsum"
+    value = " +Loremipsum"
 }
 output "instance_ip_addr6" {
-  value = "Lorem*ipsum"
+    value = "Lorem+ipsum"
 }
 output "instance_ip_addr7" {
-  value = "Loremipsum* "
+    value = "Loremipsum+ "
 }
 output "instance_ip_addr8" {
-  value = " *Lorem*ipsum* "
+    value = " +Lorem+ipsum+ "
 }
 /*
 terraform {
