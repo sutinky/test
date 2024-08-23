@@ -1,5 +1,5 @@
 output "instance_ip_addr" {
-  value = "qwepqwetqweuwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww = ThisFinalLevelOfNestingAndLengthyValueCompletesTheExampleOfADeeplyNestedAndComplexJSONStructureWithLongKeyValuePairs"
+  value = "./test_file_7_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
 }
 
 /*
