@@ -1,5 +1,5 @@
 output "instance_ip_addr" {
-  value = " + "ThisFinalLevelOfNestingAndLengthyValueCompletesTheExampleOfADeeplyNestedAndComplexJSONStructureWithLongKeyValuePairs"ThisFinalLevelOfNestingAndLengthyValueCompletesTheExampleOfADeeplyNestedAndComplexJSONStructureWithLongKeyValuePairs"
+  value = "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww = ThisFinalLevelOfNestingAndLengthyValueCompletesTheExampleOfADeeplyNestedAndComplexJSONStructureWithLongKeyValuePairs"
 }
 
 /*
