@@ -2,11 +2,11 @@ output "instance_ip_addr" {
   value = "./test_file_7_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
 }
 output "instance_ip_addr2" {
-  value = "\ P This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE| \ P"
+  value = "\\ P This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 
 output "instance_ip_addr3" {
-  value = "\ P This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE| \ P"
+  value = "\\ P This is test file number ${count.index} with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 /*
 terraform {
