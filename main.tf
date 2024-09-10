@@ -8,6 +8,23 @@ output "instance_ip_addr2" {
 output "instance_ip_addr3" {
   value = "\\ P This is test file number  with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
+
+
+terraform {
+    required_providers {
+        scalr = {
+            source = "scalr/scalr"
+            version= "1.0.4"
+        }
+    }
+}
+
+resource "scalr_environment" "test44" {
+  name                            = "my-env"
+  account_id                      = "acc-svrcncgh453bi8g"
+  cost_estimation_enabled         = true
+}
+
 /*
 terraform {
   required_providers {
