@@ -6,7 +6,7 @@ output "instance_ip_addr2" {
 }
 
 output "instance_ip_addr3" {
-  value = "\\ P This is test file number  with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
+  value = "\\ P This is test file number 11 with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 
 
