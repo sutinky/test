@@ -12,22 +12,15 @@ resource "null_resource" "resourceHello" {
   count = 1
 }
 
-terraform {
-    required_providers {
-        scalr = {
-            source = "scalr/scalr"
-            version= "1.0.4"
-        }
-    }
-}
 
+/*
 resource "scalr_environment" "test44" {
   name                            = "my-env"
   account_id                      = "acc-svrcncgh453bi8g"
   cost_estimation_enabled         = true
 }
 
-/*
+
 terraform {
   required_providers {
     local = {
