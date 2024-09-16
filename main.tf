@@ -10,13 +10,10 @@ output "instance_ip_addr3" {
 }
 resource "null_resource" "resourceHello" {
   count = 1
-    triggers = {
-      cluster_instance_ids = "aa"
-    }
 }
 
 
-/*
+
 resource "scalr_environment" "test44" {
   name                            = "my-env"
   account_id                      = "acc-svrcncgh453bi8g"
@@ -31,7 +28,7 @@ terraform {
     }
   }
 }
-
+/*
 provider "local" {}
 resource "local_file" "test_file_5" {
   #count = 8
