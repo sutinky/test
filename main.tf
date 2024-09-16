@@ -14,19 +14,20 @@ resource "null_resource" "resourceHello" {
 
 
 
-resource "scalr_environment" "test44" {
-  name                            = "my-env"
-  account_id                      = "acc-svrcncgh453bi8g"
-  cost_estimation_enabled         = true
-}
-
-
 terraform {
-  required_providers {
-    local = {
-      source = "hashicorp/local"
+    required_providers {
+        scalr = {
+            source = "scalr/scalr"
+            version= "1.0.4"
+        }
     }
-  }
+}
+resource "scalr_variable" "example1" {
+  key          = "name3"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
 }
 /*
 provider "local" {}
