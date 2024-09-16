@@ -11,7 +11,7 @@ output "instance_ip_addr3" {
 resource "null_resource" "resourceHello" {
   count = 1
     triggers = {
-      cluster_instance_ids = 'aa'
+      cluster_instance_ids = "aa"
     }
 }
 
