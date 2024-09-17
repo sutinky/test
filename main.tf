@@ -8,6 +8,9 @@ output "instance_ip_addr5" {
 output "single" {
   value = "lorem123wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
+output "with_newline" {
+  value = "lorem \n ipsum"
+}
 output "multi" {
   value = <<-EOT
     This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
