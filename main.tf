@@ -5,6 +5,21 @@ output "instance_ip_addr5" {
   value = "\\ P This is test file number with 2special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 
+output "multi" {
+  value = <<-EOT
+    This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
+
+    Here is a snippet of Excel VBA code:
+    Sub ExampleMacro()
+        Dim ws As Worksheet
+        Set ws = ThisWorkbook.Sheets("Sheet1")
+        ws.Range("A1").Value = "Hello, World!"
+    End Sub
+
+    End of the content for test file number 1.
+    EOT
+}
+
 output "instance_ip_addr4" {
   value = "\\ P This is test file number with 1special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
   sensitive = true
