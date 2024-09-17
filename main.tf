@@ -2,11 +2,11 @@ output "instance_ip_addr" {
   value = "./test_file_7_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
 }
 output "instance_ip_addr2" {
-  value = "\\ P This is test file number with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
+  value = "\\ P This is test file number with 2special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 
 output "instance_ip_addr3" {
-  value = "\\ P This is test file number with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
+  value = "\\ P This is test file number with 1special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
   sensitive = true
 }
 resource "null_resource" "resourceHello" {
@@ -25,7 +25,7 @@ terraform {
 }
 resource "scalr_variable" "example1" {
   key          = "name1"
-  value        = "my_value_name"
+  value        = "my_value_name1"
   category     = "terraform"
   description  = "variable description"
   workspace_id = "ws-v0ogs50gsham9q8ch"
