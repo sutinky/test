@@ -9,7 +9,7 @@ output "instance_ip_addr3" {
   value = "\\ P This is test file number with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 resource "null_resource" "resourceHello" {
-  count = 6
+  count = 1
 }
 
 
@@ -23,7 +23,56 @@ terraform {
     }
 }
 resource "scalr_variable" "example1" {
+  key          = "name1"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example2" {
+  key          = "name2"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example3" {
   key          = "name3"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example4" {
+  key          = "name4"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example5" {
+  key          = "name5"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example6" {
+  key          = "name6"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example7" {
+  key          = "name7"
+  value        = "my_value_name"
+  category     = "terraform"
+  description  = "variable description"
+  workspace_id = "ws-v0ogs50gsham9q8ch"
+}
+resource "scalr_variable" "example8" {
+  key          = "name8"
   value        = "my_value_name"
   category     = "terraform"
   description  = "variable description"
