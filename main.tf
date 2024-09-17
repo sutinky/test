@@ -9,7 +9,7 @@ output "instance_ip_addr3" {
   value = "\\ P This is test file number with special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 resource "null_resource" "resourceHello" {
-  count = 1
+  count = 6
 }
 
 
