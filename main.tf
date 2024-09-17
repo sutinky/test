@@ -5,6 +5,9 @@ output "instance_ip_addr5" {
   value = "\\ P This is test file number with 2special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
 }
 
+output "single" {
+  value = "loremwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+}
 output "multi" {
   value = <<-EOT
     This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
