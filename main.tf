@@ -10,7 +10,7 @@ output "multi" {
     This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
 
     Here is a snippet of Excel VBA code:
-    Sub ExampleMacro()
+    Sub ExampleMacro()222222222222
         Dim ws As Worksheet
         Set ws = ThisWorkbook.Sheets("Sheet1")
         ws.Range("A1").Value = "Hello, World!"
