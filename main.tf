@@ -6,7 +6,7 @@ output "instance_ip_addr5" {
 }
 
 output "single" {
-  value = "lorem123wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+  value = "lorem4wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
 output "with_newline" {
   value = "lorem1 \n ipsum2"
@@ -16,7 +16,7 @@ output "multi" {
     This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
 
     Here is a snippet of Excel VBA code:
-    Sub ExampleMacro()123
+    Sub ExampleMacro()11
         Dim ws As Worksheet
         Set ws = ThisWorkbook.Sheets("Sheet1")
         ws.Range("A1").Value = "Hello, World!"
