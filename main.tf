@@ -9,7 +9,7 @@ output "single" {
   value = "lorem123wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
 output "with_newline" {
-  value = "lorem \n ipsum"
+  value = "lorem1 \n ipsum2"
 }
 output "multi" {
   value = <<-EOT
