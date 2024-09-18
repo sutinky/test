@@ -9,7 +9,7 @@ output "single" {
   value = "lorem4wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
 output "with_newline" {
-  value = "lorem1 \n ipsum2  \n ipsum33 \n ipsum4"
+  value = "lorem1 \n ipsum2  \n ipsum33 \n ipsum4 \n ${null_resource.resourceHello.id}"
 }
 output "multi" {
   value = <<-EOT
