@@ -14,7 +14,9 @@ output "with_newline" {
 output "multi" {
   value = <<-EOT
 
+
     This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
+
     Here is a snippet of Excel VBA code:
     Sub ExampleMacro()11
         Dim ws As Worksheet
