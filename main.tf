@@ -9,7 +9,7 @@ output "single" {
   value = "lorem4wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
 output "with_newline" {
-  value = "lorem1\nipsum2 ipsum33 ipsum4"
+  value = "lorem1\n\n ipsum2 ipsum33 ipsum4"
   # ${scalr_variable.example1.environment_id}
 }
 output "multi" {
