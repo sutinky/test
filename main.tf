@@ -19,6 +19,7 @@ output "multi" {
     This is test file number 1 with special characters !@#$%^&*()_+={}|[]\\:\";'<>?,./
 
     Here is a snippet of Excel VBA code:
+
     Sub ExampleMacro()11
         Dim ws As Worksheet
         Set ws = ThisWorkbook.Sheets("Sheet1")
