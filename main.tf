@@ -9,7 +9,8 @@ output "single" {
   value = "lorem4wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
 }
 output "with_newline" {
-  value = "lorem1 \n ipsum2  \n ipsum33 \n ipsum4 \n ${scalr_variable.example1.environment_id}"
+  value = "lorem1 ipsum2 ipsum33 ipsum4"
+  # ${scalr_variable.example1.environment_id}
 }
 output "multi" {
   value = <<-EOT
