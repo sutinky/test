@@ -1,3 +1,14 @@
+
+output "with_newline" {
+  value = "lorem1 ipsum2 ipsum33 ipsum4"
+  # ${scalr_variable.example1.environment_id}
+}
+/*
+
+output "instance_ip_addr4" {
+  value = "\\ P This is test file number with 1special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
+  sensitive = true
+}
 output "instance_ip_addr6" {
   value = "./test_file_7_special_!@#$%^&*()_+={}|[]\\:\";'<>?,./.txt"
 }
@@ -7,10 +18,6 @@ output "instance_ip_addr5" {
 
 output "single" {
   value = "lorem4wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
-}
-output "with_newline" {
-  value = "lorem1\n\n ipsum2 ipsum33 ipsum4"
-  # ${scalr_variable.example1.environment_id}
 }
 output "multi" {
   value = <<-EOT
@@ -30,16 +37,13 @@ output "multi" {
     EOT
 }
 
-output "instance_ip_addr4" {
-  value = "\\ P This is test file number with 1special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
-  sensitive = true
-}
+*/
 resource "null_resource" "resourceHello" {
   //count = 1
 }
 
 
-
+/*
 terraform {
     required_providers {
         scalr = {
@@ -104,7 +108,7 @@ resource "scalr_variable" "example8" {
   description  = "variable description"
   workspace_id = "ws-v0ogs50gsham9q8ch"
 }
-/*
+
 provider "local" {}
 resource "local_file" "test_file_5" {
   #count = 8
