@@ -1,9 +1,9 @@
-
+/*
 output "with_newline" {
   value = "lorem1 ipsum2 ipsum33 ipsum4"
   # ${scalr_variable.example1.environment_id}
 }
-/*
+
 
 output "instance_ip_addr4" {
   value = "\\ P This is test file number with 1special characters TEST TEAM || motor-car |SEPARATE MODULE| \\ P"
