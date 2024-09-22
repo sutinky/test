@@ -4,7 +4,7 @@ output "with_newline" {
 lorem1
 ipsum2
 ipsum3
-ipsum4"
+ipsum4 "
   # ${scalr_variable.example1.environment_id}
 }
 /*
