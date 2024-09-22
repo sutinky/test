@@ -4,55 +4,17 @@ output "with_newline" {
 lorem1
 ipsum22
 ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4lorem1
-ipsum22
-ipsum32
-ipsum4
 EOT
   # ${scalr_variable.example1.environment_id}
 }
+data "scalr_environment" "example" {
+  id         = "env-svrcnchebt61e30"
+  account_id = "acc-svrcncgh453bi8g"
+}
+output "instance_ip_addr4" {
+  value = data.scalr_environment.example.name
+}
+
 /*
 
 output "instance_ip_addr4" {
