@@ -1,6 +1,10 @@
 
 output "with_newline" {
-  value = "lorem11 ipsum2 ipsum3 ipsum4"
+  value = "
+lorem1
+ipsum2
+ipsum3
+ipsum4"
   # ${scalr_variable.example1.environment_id}
 }
 /*
