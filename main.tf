@@ -15,8 +15,13 @@ terraform {
         }
     }
 }
+resource "scalr_environment" "test" {
+  name                            = "test123-env"
+  account_id                      = "acc-svrcncgh453bi8g"
+}
+
 data "scalr_environment" "example" {
-  id         = "env-svrcnchebt61e30"
+  id         = resource.scalr_environment.test.id
   account_id = "acc-svrcncgh453bi8g"
 }
 output "instance_ip_addr4" {
