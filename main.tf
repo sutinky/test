@@ -7,6 +7,14 @@ ipsum32
 EOT
   # ${scalr_variable.example1.environment_id}
 }
+terraform {
+    required_providers {
+        scalr = {
+            source = "scalr/scalr"
+            version= "1.0.4"
+        }
+    }
+}
 data "scalr_environment" "example" {
   id         = "env-svrcnchebt61e30"
   account_id = "acc-svrcncgh453bi8g"
