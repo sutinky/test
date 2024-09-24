@@ -18,7 +18,7 @@ variable "magic_animal_tuple2" {
   default = ["Usual Centaur", "Big Earth1", "Big Earth2"]
 sensitive = true
 }
-output "magic_animal_tuple" {
+output "magic_animal_tuple2" {
   value = var.magic_animal_tuple2
 }
 
