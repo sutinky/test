@@ -37,9 +37,7 @@ output "with_newline_long" {
 output "with_create" {
   value = "Lorem ipsum dolor sit amet"
 }
-output "with_knownAfterApply" {
-  value = scalr_variable.example1.environment_id
-}
+
 terraform {
     required_providers {
         scalr = {
@@ -60,6 +58,7 @@ data "scalr_environment" "example" {
 output "instance_ip_addr4" {
   value = data.scalr_environment.example.name
 }
+
 
 /*
 
