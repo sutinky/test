@@ -3,12 +3,15 @@ variable "magic_animal_tuple" {
   default = ["Usual Centaur", "Big Earth1", "Big Earth2"]
 }
 output "magic_animal_tuple" {
-  value = "${var.magic_animal_tuple}, ${var.string}"
+  value = var.magic_animal_tuple
 }
 variable "string" {
   type    = string
   default = "123"
   sensitive = true
+}
+output "sens" {
+  value = var.string
 }
 
 
