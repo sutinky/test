@@ -5,6 +5,13 @@ variable "magic_animal_tuple" {
 output "magic_animal_tuple" {
   value = var.magic_animal_tuple
 }
+variable "num" {
+  type    = number
+  default = 123
+}
+output "num" {
+  value = var.num
+}
 output "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL" {
 
   description = "Value 1 Required"
