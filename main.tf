@@ -22,7 +22,6 @@ variable "magic_animal_tuple2" {
 output "magic_animal_tuple2" {
   value = var.magic_animal_tuple2
 
-  sensitive = true
 }
 
 
