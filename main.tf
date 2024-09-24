@@ -1,6 +1,6 @@
 variable "magic_animal_tuple" {
   type    = tuple([string, string, string])
-  default = ["Usual Centaur", "Big Earth", "Non-Archery-Dry-check-on-222staging"]
+  default = ["Usual Centaur", "Big Earth1", "Non-Archery-Dry-check-on-222staging"]
 }
 output "magic_animal_tuple" {
   value = var.magic_animal_tuple
