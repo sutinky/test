@@ -5,9 +5,9 @@ variable "magic_animal_tuple" {
 output "magic_animal_tuple" {
   value = var.magic_animal_tuple
 }
-variable "num" {
-  type    = number
-  default = 123
+variable "string" {
+  type    = string
+  default = "123"
   sensitive = true
 }
 variable "magic_animals" {
