@@ -37,14 +37,6 @@ output "with_newline_long" {
 output "with_create" {
   value = "Lorem ipsum dolor sit amet"
 }
-output "with_newline" {
-  value = <<-EOT
-  Lorem
-  ipsum
-  dolor
-  EOT
-}
-
 output "with_knownAfterApply" {
   value = ${scalr_variable.example1.environment_id}
 }
