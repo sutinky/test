@@ -8,10 +8,44 @@ output "magic_animal_tuple" {
 variable "num" {
   type    = number
   default = 123
+  sensitive = true
 }
-output "num" {
-  value = var.num
+variable "magic_animals" {
+  type = list(object({
+    name       = string
+    power      = string
+    element    = string
+    description = string
+  }))
+  default = [
+    {
+      name        = "unicorn"
+      power       = "sparkle"
+      element     = "light"
+      description = "A mystical creature with a single horn on its forehead."
+    },
+    {
+      name        = "dragon"
+      power       = "fire"
+      element     = var.num
+      description = "A powerful creature with the ability to breathe fire."
+    },
+    {
+      name        = "phoenix"
+      power       = "rebirth"
+      element     = "fire"
+      description = "A legendary bird that is reborn from its own ashes."
+    },
+    {
+      name        = "griffin"
+      power       = "majesty"
+      element     = "air"
+      description = "A majestic creature with the body of a lion and the head of an eagle."
+    }
+  ]
 }
+
+
 output "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL" {
 
   description = "Value 1 Required"
