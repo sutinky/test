@@ -1,9 +1,9 @@
 variable "magic_animal_tuple" {
   type    = tuple([string, string, string])
-  default = ["Usual Centaur", "Big Earth1", var.string]
+  default = ["Usual Centaur", "Big Earth1", "Big Earth2"]
 }
 output "magic_animal_tuple" {
-  value = var.magic_animal_tuple
+  value = "${var.magic_animal_tuple}, ${var.string}"
 }
 variable "string" {
   type    = string
