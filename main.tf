@@ -38,7 +38,7 @@ output "with_create" {
   value = "Lorem ipsum dolor sit amet"
 }
 output "with_knownAfterApply" {
-  value = ${scalr_variable.example1.environment_id}
+  value = scalr_variable.example1.environment_id
 }
 terraform {
     required_providers {
