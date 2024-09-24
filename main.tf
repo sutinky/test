@@ -12,15 +12,10 @@ variable "string" {
 }
 output "sens" {
   value = var.string
-
-}
-variable "magic_animal_tuple2" {
-  type    = tuple([string, string, string])
-  default = ["Usual Centaur", "Big Earth1", "Big Earth2"]
 }
 output "magic_animal_tuple2" {
-  value = var.magic_animal_tuple2
-
+  value = "aqaaaa"
+  depends_on = [var.string]
 }
 
 
