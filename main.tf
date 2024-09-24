@@ -27,7 +27,7 @@ variable "magic_animals" {
     {
       name        = "dragon"
       power       = "fire"
-      element     = var.num
+      element     = var.string
       description = "A powerful creature with the ability to breathe fire."
     },
     {
