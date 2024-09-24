@@ -8,7 +8,7 @@ output "magic_animal_tuple" {
 variable "string" {
   type    = string
   default = "123"
-  sensitive = true
+  description = "The private IP address of the main server instance."
 }
 output "sens" {
   value = var.string
