@@ -13,7 +13,6 @@ variable "string" {
 output "sens" {
   value = var.string
 
-  sensitive = true
 }
 variable "magic_animal_tuple2" {
   type    = tuple([string, string, string])
