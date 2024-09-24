@@ -1,11 +1,53 @@
-
+output "with_update" {
+  value = "Lorem ipsum dolor sit amet"
+}
+output "with_delete" {
+  value = "Lorem ipsum dolor sit amet"
+}
 output "with_newline" {
   value = <<-EOT
-lorem1
-ipsum22
-ipsum32
-EOT
-  # ${scalr_variable.example1.environment_id}
+  Lorem
+  ipsum
+  dolor
+  sit
+  amet
+  EOT
+}
+output "with_newline_long" {
+  value = <<-EOT
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu diam maximus, elementum libero at, sollicitudin dolor. Donec nec dolor vel turpis ultricies varius nec ac nisl. Aliquam ut est id nibh pellentesque placerat vel vitae purus. Phasellus semper magna sit amet aliquet consectetur. Donec accumsan id purus eget vestibulum. Fusce finibus nunc a ligula accumsan pellentesque. Nullam lectus nunc, porttitor at dolor a, scelerisque varius lorem.
+
+  Vestibulum elit risus, tempor sit amet nunc ac, gravida sagittis nunc. Cras tempus magna non fermentum congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent et dignissim nibh, eget placerat tellus. Aenean in lacus at justo euismod consequat. Vivamus magna dui, convallis at libero ut, malesuada maximus nisl. Integer vel vestibulum mauris. Etiam dapibus scelerisque arcu, et lacinia lacus facilisis ac. Etiam sem purus, gravida quis commodo eget, pretium mollis arcu. Curabitur congue lacinia vestibulum. Nulla leo est, congue ac velit in, bibendum ullamcorper neque. In posuere, libero a blandit condimentum, justo leo luctus urna, nec dictum magna ex quis odio. Aenean tincidunt tellus vitae mi auctor euismod. Donec non urna non eros mattis hendrerit.
+
+  In tempor sodales consectetur. Donec a velit eu risus eleifend malesuada. 
+  Maecenas turpis ipsum, tempor at sagittis et, tempor vitae dui. 
+  Fusce iaculis dapibus hendrerit. 
+  Donec molestie volutpat dui, id laoreet est efficitur at. 
+  Mauris vulputate euismod nisl, ut ultricies felis tincidunt vel. Pellentesque venenatis erat et fringilla feugiat. Duis porta ac turpis in luctus. Donec ut mollis justo. Sed eget felis eget metus accumsan hendrerit. Aliquam felis felis, ultrices eget luctus elementum, porttitor ac diam.
+
+  Donec in porttitor metus. Ut vehicula, purus sed egestas viverra, ipsum nulla accumsan ligula, eu fermentum mauris augue in purus. Suspendisse suscipit efficitur justo, nec consequat sem bibendum a. Etiam suscipit, orci eu maximus efficitur, sapien dolor tincidunt nulla, in tincidunt magna mauris interdum nibh. Curabitur pellentesque pretium consectetur. Praesent sit amet leo ultrices, lobortis diam id, gravida enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse malesuada elementum est, sed lobortis magna tincidunt non. Pellentesque eget orci neque. Praesent eu est nec nibh tincidunt blandit. Nam quis magna non ligula fermentum consequat quis a ex. Nam laoreet eu purus ut aliquet. Donec sit amet ligula ut odio varius commodo. Vestibulum et consectetur ligula.
+
+  Phasellus sit amet commodo massa. 
+  Aenean nec pretium arcu. Etiam ornare mattis sapien sit amet gravida. Nam hendrerit vel nisi a cursus. Aliquam ac purus lorem. Mauris sed pulvinar odio. Praesent vestibulum tempus enim vitae viverra.
+  EOT
+}
+
+
+/*
+output "with_create" {
+  value = "Lorem ipsum dolor sit amet"
+}
+output "with_newline" {
+  value = <<-EOT
+  Lorem
+  ipsum
+  dolor
+  EOT
+}
+*/
+/*
+output "with_knownAfterApply" {
+  value = ${scalr_variable.example1.environment_id}
 }
 terraform {
     required_providers {
@@ -27,7 +69,7 @@ data "scalr_environment" "example" {
 output "instance_ip_addr4" {
   value = data.scalr_environment.example.name
 }
-
+*/
 /*
 
 output "instance_ip_addr4" {
