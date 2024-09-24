@@ -13,6 +13,14 @@ variable "string" {
 output "sens" {
   value = var.string
 }
+variable "magic_animal_tuple2" {
+  type    = tuple([string, string, string])
+  default = ["Usual Centaur", "Big Earth1", "Big Earth2"]
+sensitive = true
+}
+output "magic_animal_tuple" {
+  value = var.magic_animal_tuple2
+}
 
 
 output "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL" {
