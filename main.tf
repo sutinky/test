@@ -1,3 +1,10 @@
+output "with_newline" {
+  value = <<-EOT
+  Lorem
+  ipsum1
+  EOT
+}
+/*
 variable "magic_animal_tuple" {
   type    = tuple([string, string, string])
   default = ["Usual Centaur", "Big Earth1", "Big Earth2"]
@@ -28,7 +35,7 @@ output "with_update" {
   value = "Lorem ipsum dolor sit amet"
   sensitive = true
 }
-/*
+
 output "with_update" {
   value = "Lorem ipsum dolor sit amet"
 }
