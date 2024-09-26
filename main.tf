@@ -133,11 +133,11 @@ output "multi" {
     EOT
 }
 
-*/
+
 resource "null_resource" "resourceHello" {
   //count = 1
 }
-
+*/
 
 /*
 terraform {
