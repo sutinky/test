@@ -1,6 +1,6 @@
 output "with_newline" {
   value = <<-EOT
-  Lorem
+  LoremLorem
   ipsum1
   EOT
 }
