@@ -2,7 +2,7 @@ resource "random_uuid" "test" {
   count = 2
 }
 output "uuid_out" {
-  value = [random_uuid.test[*].result..., 'lorem']
+  value = concat(random_uuid.test[*].result, ["lorem"])
 }
 
 resource "random_password" "password" {
