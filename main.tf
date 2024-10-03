@@ -27,6 +27,9 @@ sensitive = true
 output "with_newline" {
   value = ["L\\norem\nipsum"]
 }
+output "with_newline2" {
+  value = "L\\norem\nipsum"
+}
 /*
 variable "magic_animal_tuple" {
   type    = tuple([string, string, string])
