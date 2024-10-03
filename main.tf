@@ -25,12 +25,7 @@ sensitive = true
 }
 
 output "with_newline" {
-  value = [
-<<-EOT
-  LoremLorem
-  ipsum1
-  EOT
-]
+  value = ["L\\norem\nipsum"]
 }
 /*
 variable "magic_animal_tuple" {
