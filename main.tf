@@ -25,7 +25,16 @@ sensitive = true
 }
 
 output "with_newline" {
-  value = ["L\\norem\nipsum"]
+  value = [
+<<-EOT
+
+  Lorem
+    ipsum1
+      dolor1
+    sit
+  amet1
+  EOT
+]
 }
 output "with_newline2" {
   value = "L\\norem\nipsum"
