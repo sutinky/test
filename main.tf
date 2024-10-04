@@ -29,7 +29,7 @@ output "with_newline" {
 <<-EOT
 
   Lorem
-    ipsum1
+    ipsum\\n1
       dolor1
     sit
   amet1
