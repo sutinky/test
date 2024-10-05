@@ -3,9 +3,6 @@ resource "null_resource" "resourceHello" {
   count = 1
 }
 
-resource "null_resource" "resourceHello2" {
-  count = 1
-}
 resource "random_uuid" "test" {
   count = 2
 }
