@@ -1,6 +1,6 @@
 
 resource "null_resource" "resourceHello" {
-  count = 1
+  count = 3
 }
 
 resource "random_uuid" "test" {
