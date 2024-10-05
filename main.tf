@@ -1,3 +1,8 @@
+
+resource "null_resource" "resourceHello" {
+  //count = 1
+}
+
 resource "random_uuid" "test" {
   count = 2
 }
@@ -169,9 +174,6 @@ output "multi" {
 }
 
 
-resource "null_resource" "resourceHello" {
-  //count = 1
-}
 */
 
 /*
