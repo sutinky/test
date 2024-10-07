@@ -1,4 +1,7 @@
-
+output "sens" {
+  value = 1
+  sensitive = true
+}
 resource "null_resource" "resourceHello" {
   count = 3
 }
@@ -59,7 +62,7 @@ output "note" {
           ssh -v testenv -N -R 0.0.0.0:3000:127.0.0.1:3000
           npx next ui/next
         Documentation:
-          https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guide
+          https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guidewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
     EOT
 ]
   sensitive = false
