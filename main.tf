@@ -1,6 +1,5 @@
 output "sens" {
   value = 1
-  sensitive = true
 }
 resource "null_resource" "resourceHello" {
   count = 3
