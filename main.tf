@@ -1,7 +1,7 @@
-output "very_long" {
+/*output "very_long" {
   value = "Lorem dfipsusd dolor sit ameывt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"  
 }
-
+*/
 resource "null_resource" "resourceHello" {
   count = 3
 }
@@ -35,6 +35,11 @@ output "password_out" {
 sensitive = true
 }
 
+output "sensitive_out" {
+  value = 1
+  sensitive = true
+}
+/*
 output "with_newline" {
   value = [
 <<-EOT
@@ -47,12 +52,11 @@ output "with_newline" {
   EOT
 ]
 }
-/*output "with_newline2" {
+output "with_newline2" {
   value = "L\\norem\nipsum"
 }*/
 output "note" {
-  value     = [
-<<-EOT
+  value     =  <<-EOT
         Web:
           URL                   : https://dana-outputs.testenv.scalr.dev
           Username              : admin-super
@@ -62,12 +66,11 @@ output "note" {
         Port-forwarding:
           kubectl -n dana-outputs port-forward scalr-server-0 8022:22
         UI Watcher:
-          ssh -v testenv1 -N -R 0.0.0.0:3000:127.0.0.1:3000
+          ssh -v testenv10 -N -R 0.0.0.0:3000:127.0.0.1:3000
           npx next ui/next
         Documentation:
           https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guidewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
     EOT
-]
   sensitive = false
 }
 /*
