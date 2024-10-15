@@ -62,7 +62,7 @@ output "note" {
         Port-forwarding:
           kubectl -n dana-outputs port-forward scalr-server-0 8022:22
         UI Watcher:
-          ssh -v testenv -N -R 0.0.0.0:3000:127.0.0.1:3000
+          ssh -v testenv1 -N -R 0.0.0.0:3000:127.0.0.1:3000
           npx next ui/next
         Documentation:
           https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guidewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
