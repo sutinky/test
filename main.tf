@@ -1,5 +1,5 @@
 output "very_long" {
-  value = "Lorem dfipsusdm dolor sit ameывt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"  
+  value = "Lorem dfipsusd dolor sit ameывt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"  
 }
 
 resource "null_resource" "resourceHello" {
@@ -9,13 +9,13 @@ resource "null_resource" "resourceHello" {
 resource "random_uuid" "test" {
   count = 2
 }
-output "uuid_array1" {
+output "uuid_array" {
   value = concat(random_uuid.test[*].result, ["lorem"])
 }
 output "uuid_obj1" {
-  value = { key0: random_uuid.test[0].result, key1: random_uuid.test[1].result, key2: "lorem", key3: { key0: random_uuid.test[0].result, key1: random_uuid.test[1].result, key2: "lorem" } }
+  value = { key0: random_uuid.test[0].result, key1: random_uuid.test[1].result, key2: "lorem", key3: { key0: random_uuid.test[0].result, key1: random_uuid.test[1].result, key2: "lorem1" } }
 }
-output "uuid_obj2" {
+output "uuid_obj" {
   value = { key0: random_uuid.test[0].result, key1: random_uuid.test[1].result, key2: "lorem", key3: { key0: random_uuid.test[0].result, key1: random_uuid.test[1].result, key2: "lorem" } }
 }
 
@@ -34,7 +34,7 @@ output "password_out" {
   value = random_password.password[*].result
 sensitive = true
 }
-/*
+
 output "with_newline" {
   value = [
 <<-EOT
@@ -46,10 +46,10 @@ output "with_newline" {
   amet1
   EOT
 ]
-}*/
-output "with_newline2" {
-  value = "L\\norem\nipsum"
 }
+/*output "with_newline2" {
+  value = "L\\norem\nipsum"
+}*/
 output "note" {
   value     = [
 <<-EOT
