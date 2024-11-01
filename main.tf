@@ -3,7 +3,7 @@ output "very_long" {
 }
 
 resource "null_resource" "resourceHello" {
-  count = 3
+  count = 1000
 }
 
 resource "random_uuid" "test" {
