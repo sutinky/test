@@ -27,6 +27,11 @@ terraform {
         }
     }
 }
+resource "scalr_environment" "test" {
+  name                            = "test-env"
+  account_id                      = "acc-svrcncgh453bi8g"
+}
+/*
 resource "scalr_variable" "example1" {
   key          = "name1"
   value        = "my_value_name11"
@@ -34,7 +39,7 @@ resource "scalr_variable" "example1" {
   description  = "variable description"
   workspace_id = "ws-v0oja79opa0p61m52"
 }
-
+*/
 
 /*
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
