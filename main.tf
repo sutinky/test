@@ -32,7 +32,6 @@ resource "scalr_variable" "example1" {
   value        = "my_value_name11"
   category     = "terraform"
   description  = "variable description"
-  workspace_id = "ws-v0ogs50gsham9q8ch"
 }
 
 
