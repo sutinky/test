@@ -1,7 +1,8 @@
+/*
 resource "null_resource" "resourceHello" {
   count = 1
 }
-
+*/
 /*
 resource "random_uuid" "test" {
   count = 2
@@ -17,7 +18,7 @@ variable "pass_count"{
   default = "5"
 }
 */
-/*
+
 terraform {
     required_providers {
         scalr = {
@@ -33,7 +34,7 @@ resource "scalr_variable" "example1" {
   description  = "variable description"
   workspace_id = "ws-v0ogs50gsham9q8ch"
 }
-*/
+
 
 /*
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
