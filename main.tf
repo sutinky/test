@@ -27,9 +27,11 @@ terraform {
         }
     }
 }
-resource "scalr_environment" "test" {
-  name                            = "test-env"
-  account_id                      = "acc-svrcncgh453bi8g"
+
+resource "scalr_workspace" "cli-driven" {
+  count = 1
+  name            = "ws-cli-from-provider"
+  environment_id  = "env-svrcnchebt61e30"
 }
 /*
 resource "scalr_variable" "example1" {
