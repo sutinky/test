@@ -28,10 +28,20 @@ terraform {
     }
 }
 
+
+variable "ws_count" {
+  sensitive = false
+}
+
+data "scalr_environment" test {
+  name = "tfenv1"
+  account_id = "acc-svrcncgh453bi8g" # Optional, in case a user has access to more than one account
+}
+
 resource "scalr_workspace" "cli-driven" {
-  count = 1
-  name            = "ws-cli-from-provider"
-  environment_id  = "env-svrcnchebt61e30"
+  count = var.ws_count
+  name            = "ws-cli-from-provider-${count.index}"
+  environment_id  = data.scalr_environment.test.id
 }
 /*
 resource "scalr_variable" "example1" {
