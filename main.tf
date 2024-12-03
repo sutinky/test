@@ -1,8 +1,8 @@
-/*
+
 resource "null_resource" "resourceHello" {
   count = 1
 }
-*/
+
 /*
 resource "random_uuid" "test" {
   count = 2
@@ -19,30 +19,6 @@ variable "pass_count"{
 }
 */
 
-terraform {
-    required_providers {
-        scalr = {
-            source = "scalr/scalr"
-            version= "1.0.4"
-        }
-    }
-}
-
-
-variable "ws_count" {
-  sensitive = false
-}
-
-data "scalr_environment" test {
-  name = "tfenv1"
-  account_id = "acc-svrcncgh453bi8g" # Optional, in case a user has access to more than one account
-}
-
-resource "scalr_workspace" "cli-driven" {
-  count = var.ws_count
-  name            = "ws-cli-from-provider-${count.index}"
-  environment_id  = data.scalr_environment.test.id
-}
 /*
 resource "scalr_variable" "example1" {
   key          = "name1"
